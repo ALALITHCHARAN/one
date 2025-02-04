@@ -1,16 +1,13 @@
-// Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-});
+document.addEventListener("DOMContentLoaded", function () {
+    const leftArrow = document.querySelector(".left-arrow");
+    const rightArrow = document.querySelector(".right-arrow");
+    const movieContainer = document.querySelector(".movie-container");
 
-// Form submission handling
-document.getElementById('contact-form').addEventListener('submit', function (e) {
-  e.preventDefault();
-  alert('Thank you for your message! We will get back to you soon.');
-  this.reset();
+    rightArrow.addEventListener("click", () => {
+        movieContainer.scrollBy({ left: 300, behavior: "smooth" });
+    });
+
+    leftArrow.addEventListener("click", () => {
+        movieContainer.scrollBy({ left: -300, behavior: "smooth" });
+    });
 });
