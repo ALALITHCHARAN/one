@@ -8,14 +8,14 @@
 </head>
 <body>
     <header>
-        <div class="logo">Netflix</div>
+        <div class="logo">Pavan Blueflims</div>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>TV Shows</li>
-                <li>Movies</li>
-                <li>Latest</li>
-                <li>My List</li>
+                <li>Desi</li>
+                <li>Lesbian</li>
+                <li>Japanese</li>
+                <li>Koriean</li>
+                <li>Pakka Local Telugu Bittlu</li>
             </ul>
         </nav>
     </header>
